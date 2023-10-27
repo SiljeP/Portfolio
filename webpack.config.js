@@ -42,7 +42,11 @@ module.exports = {
                             png: {
                                 quality: 20,
                                 compressionLevel: 9
+                            }, 
+                            svg: {
+                                quality: 20
                             }
+
                         }
                     }
                 }
