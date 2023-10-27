@@ -1,0 +1,31 @@
+@use "variables" as var;
+
+.work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title{
+        font-family: var.$title-font;
+        color: var.$dark-color;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+    &__text{
+        font-family: var.$body-font;
+        font-size: large;
+        width: 70%;
+        line-height: 2em;
+    }
+
+    &__text--link{
+        text-decoration: none;
+        color: var.$light-color;
+        cursor: pointer;
+    }
+    &__text--date{
+        color: var.$dark-color;
+    }
+}

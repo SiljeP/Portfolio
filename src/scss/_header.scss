@@ -1,0 +1,46 @@
+@use "variables" as var;
+
+.siteHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+
+    &__title {
+        font-family: var.$title-font;
+        color: var.$dark-color;
+        text-transform: capitalize;
+        letter-spacing: 4px;
+        font-weight: 700;
+       
+    }
+    &__title--italics{
+        font-style: italic ;
+        text-transform: lowercase;
+        font-size: large;
+        display: block;
+        text-align: center;
+        font-weight: 400;
+    }
+}
+
+.headerNav {
+    font-family: var.$body-font;
+    font-weight: 300;
+    &__list {
+        display: flex; 
+    }
+    &__items {
+        list-style: none;
+        margin: 2em;
+        padding: .2em;
+        &:hover{
+            // background-color: var.$accent-color-dark;
+            // color: var.$dark-color;
+            padding: .2em;
+            border-radius: 5px;
+            box-shadow: 3px 3px var.$dark-color;
+            transition: all .3s ease;
+        }
+    }
+    }

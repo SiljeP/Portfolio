@@ -1,0 +1,10 @@
+@use "variables" as var;
+
+.hero {
+    margin: auto;
+    text-align: center;
+
+    &__svg {
+        font-size: 10em;
+    }
+}

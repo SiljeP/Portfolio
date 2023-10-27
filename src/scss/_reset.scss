@@ -1,0 +1,19 @@
+:root{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("/src/images/light-blurry-gradient-haikei.svg");
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}

@@ -3,14 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpack css examples</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Front-end Silje</title>
+    <link rel="stylesheet" href="./dist/main.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Hello World hello hello</h1>
-    </div>
+    <header class="siteHeader">
+        <h1 class="siteHeader__title">Front-end Developer, Silje <span class="siteHeader__title--italics">in training</span></h1>
+        <nav class="headerNav">
+            <ul class="headerNav__list">
+                <li class="headerNav__items"><a class="link" href="#about">About</a></li>
+                <li class="headerNav__items"><a class="link" href="#work">Work</a></li>
+                <li class="headerNav__items"><a class="link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article class="hero">
+        <svg class="hero__svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+    </article>
 
-    <script src="./main.js"></script>
+    <main>
+    <article class="about" id="about">
+        <h2 class="about__title">About me</h2>
+        <p class="about__text">Hello world! My name is Silje, and I'm a Danish, 24 year old girl, in training to become a front-end developer. I have an eye for detail and love problemsolving. One of my (many) great qualities is my ability to focus on a project. 
+            
+        I'm currently on the main course in VET (Vocational education and training) in Web development at <a class="about__text--link" href="https://www.rts.dk/in-english">Roskilde Technical College (VET).</a></p>
+       
+        <p class="about__text"> I'm currently looking for an internship in front-end development lasting six weeks (paid by my school - not you!) in the period <span class="about__text--date">22. January 2024 to 8. March 2024. </span></p>
+
+        <section class="personal">
+            <h2 class="personal__title">Personal life</h2>
+            <p class="personal__text">I have plenty of hobbies that I love to do when I'm not coding. I enjoy rug tufting slightly ugly rugs, painting slightly ugly pictures, and bookbinding ugly paperbacks to much prettier hardbacks. My dog Bucky is also very happy when I take him on long walks, so I try to do that a lot too. I also enjoy reading, and read about 120 books a year.</p>
+        </section>
+    </article>
+
+    <article class="work" id="work">
+        <h2 class="work__title">Work</h2>
+        <p class="work__text"> I still have about a year left of school (as I finish October 2024), so as my header says I'm still in training. But for the past 8 months I've worked with HTML5, CSS and JavaScript. We are currently working on automatisation, webpack and SASS. Next up is learning React JS(in Nov/Dec). Examples of my work here. </p>
+    </article>
+    <section class="pokedex">
+        <h3 class="pokedex__title"> PokeDex API </h3>
+        <p class="pokedex__text">This project shows the first time I worked with web-API and using fetch. </p>
+    </section>
+
+<article class="contact" id="contact">
+
+    <h2 class="contact__title">Contact</h2>
+    <p class="contact__text">If you're on this site it's probably because we've already been talking and I showed you this. In that case hi again! But if by some unbeknown reason you've stumbled on this by accident and wanna get in touch with me: here's a really normal contact formular.</p>
+
+    <form action="submit">
+        <input type="email">
+        <input type="text">
+    </form>
+</article>
+
+</main>
 </body>
 </html>
