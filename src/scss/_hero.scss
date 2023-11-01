@@ -1,11 +1,38 @@
 @use "variables" as var;
 
+
+
+.arrow{
+    margin: auto;
+    text-align: center;
+    font-size: 4em;
+    .animate__animated.animate__pulse {
+        --animate-delay: 7s; 
+      }
+    .fa-angles-down{
+        color: var.$dark-color;
+        padding: 2em;
+    }
+   
+}
+
+
+
 .hero {
     margin: auto;
     text-align: center;
 
-    &__svg {
-        font-size: 10em;
+    &__animation {
+        font-size: 4.5em;
+        font-family: var.$title-font;
         color: var.$accent-color-dark;
+        width: 60%;
+        margin: auto;
+
     }
+
+}
+
+.svg-color{
+    color: pink;
 }

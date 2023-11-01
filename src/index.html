@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front-end Silje</title>
     <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/2946442f60.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="siteHeader">
@@ -18,13 +20,16 @@
         </nav>
     </header>
     <article class="hero">
-        <svg class="hero__svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+        <h1 class="hero__animation">Hi! I'm <span class="auto-type"></span> </h1>
     </article>
 
     <main>
+        <div class="arrow">
+            <i class="fa-solid fa-angles-down animate__animated animate__pulse"></i>
+        </div>
     <article class="about" id="about">
         <h2 class="about__title">About me</h2>
-        <p class="about__text">Hello world! My name is Silje, and I'm a Danish, 24 year old girl, in training to become a front-end developer. I have an eye for detail and love problemsolving. One of my (many) great qualities is my ability to focus on a project. 
+        <p class="about__text">Hello world! My name is Silje, and I'm a Danish, 24 year old girl, studying to become a front-end developer. I have an eye for detail, love problemsolving and are able to focus on a project for long periods of time.
             
         I'm currently on the main course in VET (Vocational education and training) in Web development at <a class="about__text--link" href="https://www.rts.dk/in-english">Roskilde Technical College (VET).</a></p>
        
@@ -55,7 +60,8 @@
         <input type="text">
     </form>
 </article>
-
 </main>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js" defer></script>
+
 </body>
 </html>
