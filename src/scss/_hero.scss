@@ -1,22 +1,51 @@
 @use "variables" as var;
 
 
-
-.arrow{
+.arrow {
     margin: auto;
     text-align: center;
     font-size: 4em;
-    .animate__animated.animate__pulse {
-        --animate-delay: 7s; 
-      }
-    .fa-angles-down{
+    -webkit-animation: 11.5s ease 0s normal forwards 1 fadein;
+    animation: 11.5s ease 0s normal forwards 1 fadein;
+
+    .animate__animated.animate__heartBeat {
+        --animate-delay: 6s;
+
+    }
+
+    .fa-angles-down {
         color: var.$dark-color;
         padding: 2em;
     }
-   
 }
 
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
 
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 .hero {
     margin: auto;
@@ -31,8 +60,4 @@
 
     }
 
-}
-
-.svg-color{
-    color: pink;
 }

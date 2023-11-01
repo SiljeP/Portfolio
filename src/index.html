@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front-end Silje</title>
     <link rel="stylesheet" href="./style.scss">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://kit.fontawesome.com/2946442f60.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header class="siteHeader">
-        <h1 class="siteHeader__title">Front-end Developer, Silje <span class="siteHeader__title--italics">in training</span></h1>
+        <h1 class="siteHeader__title">Front-end Developer, Silje <span class="siteHeader__title--italics">in
+                training</span></h1>
         <nav class="headerNav">
             <ul class="headerNav__list">
                 <li class="headerNav__items"><a class="link" href="#about">About</a></li>
@@ -25,43 +28,58 @@
 
     <main>
         <div class="arrow">
-            <i class="fa-solid fa-angles-down animate__animated animate__pulse"></i>
+            <i class="fa-solid fa-angles-down animate__animated animate__heartBeat animate__delay-2s"></i>
         </div>
-    <article class="about" id="about">
-        <h2 class="about__title">About me</h2>
-        <p class="about__text">Hello world! My name is Silje, and I'm a Danish, 24 year old girl, studying to become a front-end developer. I have an eye for detail, love problemsolving and are able to focus on a project for long periods of time.
-            
-        I'm currently on the main course in VET (Vocational education and training) in Web development at <a class="about__text--link" href="https://www.rts.dk/in-english">Roskilde Technical College (VET).</a></p>
-       
-        <p class="about__text"> I'm currently looking for an internship in front-end development lasting six weeks (paid by my school - not you!) in the period <span class="about__text--date">22. January 2024 to 8. March 2024. </span></p>
+        <article class="about" id="about">
+            <h2 class="about__title">About me</h2>
+            <p class="about__text">Hello world! My name is Silje, and I'm a Danish, 24 year old girl, studying to become
+                a front-end developer. I have an eye for detail, love problemsolving and are able to focus on a project
+                for long periods of time.
 
-        <section class="personal">
-            <h2 class="personal__title">Personal life</h2>
-            <p class="personal__text">I have plenty of hobbies that I love to do when I'm not coding. I enjoy rug tufting slightly ugly rugs, painting slightly ugly pictures, and bookbinding ugly paperbacks to much prettier hardbacks. My dog Bucky is also very happy when I take him on long walks, so I try to do that a lot too. I also enjoy reading, and read about 120 books a year.</p>
+                I'm currently on the main course in VET (Vocational education and training) in Web development at <a
+                    class="about__text--link" href="https://www.rts.dk/in-english">Roskilde Technical College (VET).</a>
+            </p>
+
+            <p class="about__text"> I'm currently looking for an internship in front-end development lasting six weeks
+                (paid by my school - not you!) in the period <span class="about__text--date">22. January 2024 to 8.
+                    March 2024. </span></p>
+
+            <section class="personal">
+                <h2 class="personal__title">Personal life</h2>
+                <p class="personal__text">I have plenty of hobbies that I love to do when I'm not coding. I enjoy rug
+                    tufting slightly ugly rugs, painting slightly ugly pictures, and bookbinding ugly paperbacks to much
+                    prettier hardbacks. My dog Bucky is also very happy when I take him on long walks, so I try to do
+                    that a lot too. I also enjoy reading, and read about 120 books a year.</p>
+            </section>
+        </article>
+
+        <article class="work" id="work">
+            <h2 class="work__title">Work</h2>
+            <p class="work__text"> I still have about a year left of school (as I finish October 2024), so as my header
+                says I'm still in training. But for the past 8 months I've worked with HTML5, CSS and JavaScript. We are
+                currently working on automatisation, webpack and SASS. Next up is learning React JS(in Nov/Dec).
+                Examples of my work here. </p>
+        </article>
+        <section class="pokedex">
+            <h3 class="pokedex__title"> PokeDex API </h3>
+            <p class="pokedex__text">This project shows the first time I worked with web-API and using fetch. </p>
         </section>
-    </article>
 
-    <article class="work" id="work">
-        <h2 class="work__title">Work</h2>
-        <p class="work__text"> I still have about a year left of school (as I finish October 2024), so as my header says I'm still in training. But for the past 8 months I've worked with HTML5, CSS and JavaScript. We are currently working on automatisation, webpack and SASS. Next up is learning React JS(in Nov/Dec). Examples of my work here. </p>
-    </article>
-    <section class="pokedex">
-        <h3 class="pokedex__title"> PokeDex API </h3>
-        <p class="pokedex__text">This project shows the first time I worked with web-API and using fetch. </p>
-    </section>
+        <article class="contact" id="contact">
 
-<article class="contact" id="contact">
+            <h2 class="contact__title">Contact</h2>
+            <p class="contact__text">If you're on this site it's probably because we've already been talking and I
+                showed you this. In that case hi again! But if by some unbeknown reason you've stumbled on this by
+                accident and wanna get in touch with me: here's a really normal contact formular.</p>
 
-    <h2 class="contact__title">Contact</h2>
-    <p class="contact__text">If you're on this site it's probably because we've already been talking and I showed you this. In that case hi again! But if by some unbeknown reason you've stumbled on this by accident and wanna get in touch with me: here's a really normal contact formular.</p>
-
-    <form action="submit">
-        <input type="email">
-        <input type="text">
-    </form>
-</article>
-</main>
-<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js" defer></script>
+            <form action="submit">
+                <input type="email">
+                <input type="text">
+            </form>
+        </article>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js" defer></script>
 
 </body>
+
 </html>
