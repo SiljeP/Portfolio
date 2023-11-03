@@ -1,6 +1,6 @@
 export default (function () {
     const OBSERVER = new IntersectionObserver(callback, {
-        threshold: 1.0
+        threshold: 0.7
     })
     const PARAGRAPHS = document.querySelectorAll(".about")
     PARAGRAPHS.forEach(p => OBSERVER.observe(p))

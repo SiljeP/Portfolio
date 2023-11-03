@@ -11,7 +11,8 @@
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 4px;
-        text-align: left;
+        margin: auto;
+        text-align: center;
     }
 
     &__text{
@@ -19,6 +20,8 @@
         font-size: large;
         width: 70%;
         line-height: 2em;
+        text-align: center;
+        margin: auto;
     }
 
     &__text--link{
