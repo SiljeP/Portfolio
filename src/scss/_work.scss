@@ -52,5 +52,11 @@
         text-decoration: none;
         color: var.$light-color;
         cursor: pointer;
+
+    }
+
+    &__image{
+        height: 300px;
+        
     }
 }
