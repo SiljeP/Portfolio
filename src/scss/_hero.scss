@@ -5,11 +5,12 @@
     margin: auto;
     text-align: center;
     font-size: 4em;
-    -webkit-animation: 11.5s ease 0s normal forwards 1 fadein;
-    animation: 11.5s ease 0s normal forwards 1 fadein;
+   
+    -webkit-animation: 10s ease 0s normal forwards 1 fadein;
+    animation: 10s ease 0s normal forwards 1 fadein;
 
     .animate__animated.animate__heartBeat {
-        --animate-delay: 6s;
+        --animate-delay: 5s;
     }
     .fa-angles-down {
         color: var.$dark-color;
@@ -48,6 +49,7 @@
 .hero {
     margin: auto;
     text-align: center;
+    height: 300px;
 
     &__animation {
         font-size: 4.5em;
@@ -55,6 +57,7 @@
         color: var.$accent-color-dark;
         width: 60%;
         margin: auto;
+      
 
     }
 

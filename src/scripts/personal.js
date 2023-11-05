@@ -1,4 +1,6 @@
-export default (function () {  
+export default (function () {   
+   
+
     const PERSONAL_TITLE = document.querySelector(".personal__title")
     const PERSONAL_TEXT = document.querySelector(".personal__text")
 
@@ -16,7 +18,7 @@ export default (function () {
                 entry.target.style.opacity = "0"
             }
             if (entry.intersectionRatio >= 0.5) {
-            
+
                 entry.target.style.opacity = "1"
                 entry.target.style.transition = "opacity 2s ease"
             } else {
@@ -26,14 +28,20 @@ export default (function () {
         })
     }
 
+ 
     PERSONAL_TITLE.addEventListener("click", clickHandler)
-    function clickHandler(){
+    function clickHandler() {
+        
+        const ARROW_PERSONAL = document.querySelector(".personalArrow")
+        
+        ARROW_PERSONAL.classList.toggle("fa-arrow-right-long")
+        ARROW_PERSONAL.classList.toggle("fa-arrow-down-long")
+
         if (PERSONAL_TEXT.style.display === "none") {
             PERSONAL_TEXT.style.display = "contents"
-        }else{
+        } else {
             PERSONAL_TEXT.style.display = "none"
         }
     }
 
-
-    })()
+})()
