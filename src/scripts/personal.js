@@ -26,8 +26,6 @@ export default (function () {
         })
     }
 
-  
-
     PERSONAL_TITLE.addEventListener("click", clickHandler)
     function clickHandler(){
         if (PERSONAL_TEXT.style.display === "none") {
