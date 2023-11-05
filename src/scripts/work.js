@@ -2,7 +2,7 @@ export default (function () {
     const OBSERVER = new IntersectionObserver(callback, {
         threshold: 0.7
     })
-    const PARAGRAPHS = document.querySelectorAll(".about")
+    const PARAGRAPHS = document.querySelectorAll(".work")
     PARAGRAPHS.forEach(p => OBSERVER.observe(p))
     function callback(entries) {
         entries.forEach(entry => {
