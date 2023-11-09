@@ -40,13 +40,9 @@ module.exports = {
                                 quality: 20,
                             },
                             png: {
-                                quality: 20,
-                                compressionLevel: 3
-                            }, 
-                            svg: {
-                                quality: 20
+                                quality: 90,
+                                compressionLevel: 2
                             }
-
                         }
                     }
                 }

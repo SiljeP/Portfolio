@@ -22,12 +22,26 @@
         text-align: center;
     }
 
+    &__container--hidden {
+        align-items: center;
+    
+    }
+
+    &__image {
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        margin: 0 .5em;
+    }
+
     &__text {
         font-family: var.$body-font;
         font-size: large;
         line-height: 2em;
         opacity: 0;
         display: block;
+        text-align: left;
 
     }
 

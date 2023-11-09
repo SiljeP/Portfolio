@@ -1,20 +1,25 @@
-:root{
+:root {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    // background: url("/src/images/light-blurry-gradient-haikei.svg");
-    background-color:antiquewhite ;
-    background-size: cover;
-    background-attachment: fixed; 
+
+body {
+ background-color: antiquewhite;
+    // background: url("/src/images/ffflurry.svg");
+    
+    // background-size: cover;
+    // background-attachment: fixed;
+    width: 100%;
+    overflow-x: hidden;
 }
 
-html, body{
+html,
+body {
     scroll-behavior: smooth;
 }
 
-.link{
+.link {
     text-decoration: none;
     color: black;
 }
