@@ -5,7 +5,12 @@
     align-items: center;
     justify-content: space-between;
     height: 65px;
+    padding: 0 1em;
     border-bottom: 2px solid var.$light-color;
+
+    &__link{
+        text-decoration: none;
+    }
 
     &__title {
         font-family: var.$title-font;
@@ -16,6 +21,7 @@
         padding: 0;
         margin: 0;
         font-size: medium;
+        
        
     }
     &__title--italics{

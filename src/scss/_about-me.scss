@@ -13,6 +13,7 @@
         letter-spacing: 4px;
         margin: auto;
         text-align: center;
+        font-size: xx-large;
     }
 
     &__text{
@@ -26,10 +27,10 @@
 
     &__text--link{
         text-decoration: none;
-        color: var.$light-color;
+        color: var.$accent-color-dark;
         cursor: pointer;
     }
     &__text--date{
-        color: var.$dark-color;
+        color: var.$accent-color-dark;
     }
 }

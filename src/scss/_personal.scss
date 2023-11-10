@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
     text-align: center;
     width: 70%;
 
@@ -19,7 +18,9 @@
         letter-spacing: 4px;
         cursor: pointer;
         margin: auto;
-        text-align: center;
+        text-align: left;
+    
+        
     }
 
     &__container--hidden {
@@ -44,15 +45,4 @@
         text-align: left;
 
     }
-
-    &__text--link {
-        text-decoration: none;
-        color: var.$light-color;
-        cursor: pointer;
-    }
-
-    &__text--date {
-        color: var.$dark-color;
-    }
-
 }
