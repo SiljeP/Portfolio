@@ -53,3 +53,19 @@
         }
     }
     }
+
+    @media (max-width: 755px) {
+
+        .siteHeader {
+            display: flex;
+            align-items: center;
+            height: 65px;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            padding:  1em 0;
+            overflow-x: hidden ;
+      
+        }
+        
+    }

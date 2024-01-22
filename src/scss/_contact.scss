@@ -18,7 +18,18 @@
     &__text{
         font-family: var.$body-font;
         font-size: large;
-        width: 70%;
+        width: 90%;
         line-height: 2em;
     }
+}
+
+#mailLink{
+
+        font-family: var.$body-font;
+        font-size: large;
+
+        line-height: 2em;
+        color: var.$dark-color;
+        text-decoration:none;
+    
 }

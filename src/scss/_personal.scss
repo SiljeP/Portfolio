@@ -19,13 +19,13 @@
         cursor: pointer;
         margin: auto;
         text-align: left;
-    
-        
+
+
     }
 
     &__container--hidden {
         align-items: center;
-    
+
     }
 
     &__image {
@@ -44,5 +44,24 @@
         display: block;
         text-align: left;
 
+    }
+}
+
+@media (max-width: 755px) {
+
+    .personal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 95%;
+
+        &__image {
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+            margin: 0 .5em;
+        }
     }
 }

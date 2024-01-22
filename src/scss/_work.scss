@@ -1,11 +1,11 @@
 @use "variables" as var;
 
-.work{
+.work {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    &__title{
+    &__title {
         font-family: var.$title-font;
         color: var.$dark-color;
         font-weight: 600;
@@ -14,28 +14,30 @@
         font-size: xx-large;
     }
 
-    &__text{
+    &__text {
         font-family: var.$body-font;
         font-size: large;
         width: 70%;
         line-height: 2em;
     }
 
-    &__text--link{
+    &__text--link {
         text-decoration: none;
         color: var.$light-color;
         cursor: pointer;
     }
-    &__text--date{
+
+    &__text--date {
         color: var.$dark-color;
     }
 }
-.pokedex{
+
+.pokedex {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    &__title{
+    &__title {
         font-family: var.$title-font;
         color: var.$dark-color;
         font-weight: 600;
@@ -43,65 +45,65 @@
         letter-spacing: 4px;
     }
 
-    &__text{
+    &__text {
         font-family: var.$body-font;
         font-size: large;
         width: 70%;
         line-height: 2em;
     }
-    &__text--link{
+
+    &__text--link {
         text-decoration: none;
         color: var.$light-color;
         cursor: pointer;
 
     }
 
-    &__imageContainer{
+    &__imageContainer {
         display: flex;
-    
+
     }
-    &__image{
+
+    &__image {
         height: 300px;
         padding: 0 1em;
 
-        
-        &:hover{
+
+        &:hover {
             // animation: scaleUp 1.5s infinite ease forwards;
             animation: scaleUp;
             animation-duration: 1.5s;
             animation-fill-mode: forwards;
-           
+
         }
-        
-        @keyframes scaleUp{
-          0%   {transform: scale(1)}
-          100% {transform: scale(1.5);
-                animation-play-state: paused}
-        }  
+
+        @keyframes scaleUp {
+            0% {
+                transform: scale(1)
+            }
+
+            100% {
+                transform: scale(1.5);
+                animation-play-state: paused
+            }
+        }
     }
-    
+
 }
 
 
-.newsbox{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 755px) {
 
-    &__title{
-        font-family: var.$title-font;
-        color: var.$dark-color;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 4px;
+    .pokedex {
+        &__imageContainer {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__image {
+            height: 300px;
+            padding: 1em 1em;
+        }
+
     }
-
-    &__text{
-        font-family: var.$body-font;
-        font-size: large;
-        width: 70%;
-        line-height: 2em;
-    }
-
-
 }

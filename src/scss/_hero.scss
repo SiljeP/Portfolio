@@ -5,13 +5,14 @@
     margin: auto;
     text-align: center;
     font-size: 4em;
-   
+
     -webkit-animation: 10s ease 0s normal forwards 1 fadein;
     animation: 10s ease 0s normal forwards 1 fadein;
 
     .animate__animated.animate__heartBeat {
         --animate-delay: 5s;
     }
+
     .fa-angles-down {
         color: var.$dark-color;
         padding: 2em;
@@ -58,8 +59,19 @@
         color: var.$accent-color-dark;
         width: 60%;
         margin: auto;
-      
 
+
+    }
+
+}
+
+@media (max-width: 755px) {
+
+    .arrow {
+        .fa-angles-down {
+            color: var.$dark-color;
+            padding: 1.5em 0;
+        }
     }
 
 }
